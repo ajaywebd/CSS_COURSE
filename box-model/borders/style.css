@@ -3,13 +3,9 @@
 /** ---------------------------------------- --> */
 
 /* 1. Short-hand Syntax:
-       ? border: [border-width] [border-style] [border-color];
+       ? border: [border-width] [border-style] [border-color]    */
 
-    - `[border-width]`: Specifies the width of the border (e.g., `1px`, `2px`, `3px`, etc.).
-    - `[border-style]`: Specifies the style of the border (e.g., `solid`, `dotted`, `dashed`, etc.).
-    - `[border-color]`: Specifies the color of the border (e.g., a color name, hex code, RGB value, etc.). */
-
-/*TODO Let understand the Each border property one by one.  */
+/* Let understand the Each border property one by one.  */
 
 /*? Border Width: The border-width property controls the thickness of the border. You can specify it using units like pixels (px), ems (em), or percentages (%). */
 
@@ -70,7 +66,6 @@ p {
   border-right: 15px dotted red;
   border-bottom: 15px ridge green;
   border-left: 15px double #003b99; */
-
   /*? Now, further we can go more deeper with each individual values. */
   /* border-top-width: 15px;
   border-top-style: solid;
@@ -78,7 +73,7 @@ p {
 }
 
 /** ------------------------------------- -->
-/**  BORDERS IN CSS3
+/**  BORDERS IN CSS
 /** ---------------------------------------- --> */
 /*? Border-radius: The border-radius CSS property rounds the corners of an element's outer border edge. You can set a single radius to make circular corners, or two radii to make elliptical corners. */
 
@@ -102,7 +97,7 @@ div {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   */
-  border-radius: 50%;
+  /* border-radius: 50%; */
   background: #349b9e;
 }
 
