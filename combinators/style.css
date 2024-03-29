@@ -1,0 +1,60 @@
+/** ------------------------------------- -->
+/** CSS COMBINATORS
+/** ---------------------------------------- --> */
+
+/** CSS combinators are used to define relationships between different elements in your HTML document. They allow you to target elements based on their position and hierarchy within the document structure.  */
+
+/*? Descendant Selector (Space): Selects an element that is a descendant of another element. */
+
+/*? Child Selector (>): Selects an element that is a direct child of another element. */
+
+/*? Adjacent Sibling Selector (+): Selects an element that is immediately preceded by another element. */
+
+/*? General Sibling Selector (~): Selects all elements that are siblings of another element and share the same parent. */
+
+/*? Universal Selector (*): Selects all elements. */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost";
+}
+
+body {
+  height: 100vh;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+h1,
+h2,
+p,
+li {
+  font-size: 30px;
+}
+/** --------------------------------- */
+
+.content-1 ul p {
+  font-weight: bold;
+  color: red;
+}
+
+.content-1 ul li {
+  color: green;
+}
+
+.content-1 > ul > li {
+  color: brown;
+}
+
+.content-1 ul p + li {
+  color: pink;
+}
+
+.content-1 ul p ~ li {
+  color: purple;
+}
