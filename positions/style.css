@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.grand-parent {
+  height: 600px;
+  width: 950px;
+  border: 2px solid red;
+  position: relative;
+}
+.parent {
+  border: 2px solid blue;
+  height: 600px;
+  width: 650px;
+
+  position: relative;
+}
+.child {
+  border: 2px solid black;
+  height: 75px;
+  width: 75px;
+}
+.child-1 {
+  background-color: rebeccapurple;
+}
+.child-2 {
+  background-color: blue;
+}
+.child-3 {
+  background-color: gray;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+.child-4 {
+  background-color: black;
+  color: white;
+}
