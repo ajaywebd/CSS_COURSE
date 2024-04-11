@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        height: 500px;
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        perspective: 800px;
+        /* perspective-origin: top right; */
+      }
+      .cube {
+        /* border: 2px solid black; */
+        height: 200px;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        transform-style: preserve-3d;
+        animation: rotatingcube 10s linear infinite;
+      }
+      @keyframes rotatingcube {
+        from {
+          transform: rotateX(0) rotateY(0) rotateZ(0);
+        }
+        to {
+          transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+        }
+      }
+      .face {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        border: 2px solid black;
+      }
+      .front {
+        /* background: rgba(255, 0, 0, 0.24); */
+
+        background: url(./images/5.png);
+        background-size: cover;
+        background-position: center;
+        transform: translateZ(100px);
+      }
+      .back {
+        /* background: rgba(0, 0, 255, 0.274); */
+
+        background: url(./images/6.png);
+        background-size: cover;
+        background-position: center;
+        transform: translateZ(-100px);
+      }
+      .top {
+        /* background: rgba(137, 43, 226, 0.295); */
+        background: url(./images/1.png);
+        background-size: cover;
+        background-position: center;
+        transform: rotateX(90deg) translateZ(100px);
+      }
+      .bottom {
+        /* background-color: rgba(0, 0, 0, 0.274); */
+
+        background: url(./images/2.png);
+        background-size: cover;
+        background-position: center;
+        transform: rotateX(90deg) translateZ(-100px);
+      }
+      .left {
+        /* background-color: rgba(255, 217, 0, 0.26); */
+
+        background: url(./images/3.png);
+        background-size: cover;
+        background-position: center;
+        transform: rotateY(90deg) translateZ(100px);
+      }
+      .right {
+        /* background-color: rgba(255, 192, 203, 0.356); */
+
+        background: url(./images/4.png);
+        background-size: cover;
+        background-position: center;
+        transform: rotateY(90deg) translateZ(-100px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cube">
+        <div class="face front"></div>
+        <div class="face back"></div>
+        <div class="face top"></div>
+        <div class="face bottom"></div>
+        <div class="face left"></div>
+        <div class="face right"></div>
+      </div>
+    </div>
+  </body>
+</html>
